@@ -30,7 +30,7 @@ export const AuthModal = ({
         overflow: 'hidden',
       }}>
       <Box sx={{ position: 'relative' }}>
-        <LoginRegisterView onSubmitClick={onSubmitClick} />
+        <LoginRegisterView onSubmitClick={onSubmitClick} showLogin={false} />
         <ButtonBase
           onClick={onCloseClick}
           sx={{

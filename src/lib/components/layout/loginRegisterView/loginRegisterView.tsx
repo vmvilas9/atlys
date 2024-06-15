@@ -5,12 +5,14 @@ import { RegisterView } from '../registerView';
 
 type LoginRegisterViewProps = {
   onSubmitClick: () => void;
+  showLogin?: boolean;
 };
 
 export const LoginRegisterView = ({
   onSubmitClick,
+  showLogin = true,
 }: LoginRegisterViewProps) => {
-  const [loginView, setLoginView] = useState<boolean>(true);
+  const [loginView, setLoginView] = useState<boolean>(showLogin);
 
   const onRegisterClick = () => {
     setLoginView(false);
