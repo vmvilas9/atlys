@@ -1,0 +1,1 @@
+export { LoginRegisterView } from './loginRegisterView';
