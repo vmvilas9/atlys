@@ -54,6 +54,7 @@ export const Post = ({
               <Text
                 variant={'font1'}
                 color={theme.colors.typography.grey2}
+                textAlign={'start'}
                 marginTop={'5px'}>
                 {post.time} {post.edited ? ' • Edited' : ''}
               </Text>
